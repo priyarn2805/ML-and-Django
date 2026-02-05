@@ -47,5 +47,8 @@ All prediction history is stored in the database, tracking:
 3. *Run:* python manage.py runserver
 ---
 
-
-<img width="217" height="658" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/8ea903ec-f099-4a09-83c0-82773d140292" />
+![WhatsApp Image 2026-02-05 at 9 42 24 PM](https://github.com/user-attachments/assets/c5568ab3-3941-4e24-9050-b861a9c6498e)
+![WhatsApp Image 2026-02-05 at 9 42 24](https://github.com/user-attachments/assets/4bb72a17-5e5d-42a3-b5a5-884b11034c4a)
+![WhatsApp Image 2026-02-05 at 3 36 02 PM](https://github.com/user-attachments/assets/c12a6ec0-b867-4699-ba59-23d570a7642c)
+![WhatsApp Image 2026-02-05 at 3 36 03 PM](https://github.com/user-attachments/assets/6c3a5695-5577-49a3-9720-281319bb0dc9)
+![WhatsApp Image 2026-02-05 at 3 40 36 PM](https://github.com/user-attachments/assets/5f5a8bba-1cc9-4fe5-8a4a-71d5934dd822)
