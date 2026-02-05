@@ -1,14 +1,51 @@
-# This is django project where we buit full-stack application, which will classify radation with svm
-Particle Physics Classifier: Gamma vs. Hadron
-This Django-based web application provides a platform for the identification and analysis of atmospheric Cherenkov gamma-ray showers versus hadronic background noise. Using data-driven insights, the project aims to streamline the classification process essential for ground-based gamma-ray astronomy.
+# This is django project where we built full-stack application which will classify radiation with svm model and we can download the csv file (Data used for prediction)
 
-🌌 Project Overview
-The detection of high-energy gamma rays is often hindered by the massive background of cosmic-ray hadrons. This project leverages Django to provide a user-friendly interface for:
+# 🌌 Gamma-Hadron Particle Classifier
 
-Data Visualization: Interactive plots of particle attributes (Length, Width, Size, Conc, etc.).
+A Machine Learning web application built with *Django* to classify high-energy particles (Gamma vs. Hadron) using data from the MAGIC Gamma Telescope.
 
-Model Prediction: A backend integration of machine learning models to classify input parameters.
+## 🚀 Key Features
 
-Dataset Management: Easy uploading and cleaning of particle physics datasets.
+* *Real-time Classification:* Integrated ML model for instant prediction.
+* *Django Integration:* Logic handled within views.py for seamless request processing.
+* *Data Persistence:* Automatic logging of inputs and results to the database.
+
+## 🛠️ Tech Stack
+
+* *Backend:* Django (Python)
+* *Machine Learning:* Scikit-Learn (SVM)
+* *Database:* SQLite
+* *Data Source:* MAGIC Gamma Telescope Dataset 
+
+## 🏗️ Implementation Details
+
+### Model Integration (views.py)
+
+The application loads a serialized model (.pkl or .joblib) and processes form data:
+
+python
+def predict_view(request):
+    # 1. Capture telescope parameters from form
+    # 2. model.predict() determines if it is 'Gamma' or 'Hadron'
+    # 3. Results are saved to the database via Django Models
+    # 4. Result is rendered to the UI
+
+
+
+### Database Connection
+
+All prediction history is stored in the database, tracking:
+
+* *Input Features:* fLength, fWidth, fSize, etc.
+* *Classification:* Gamma (Signal) or Hadron (Background).
+* *Timestamp:* For historical data tracking.
+
+## 📋 Quick Setup
+
+1. *Install:* pip install -r requirements.txt
+2. *Migrate DB:* python manage.py migrate
+3. *Run:* python manage.py runserver
+---
+
 
 <img width="217" height="658" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/8ea903ec-f099-4a09-83c0-82773d140292" />
